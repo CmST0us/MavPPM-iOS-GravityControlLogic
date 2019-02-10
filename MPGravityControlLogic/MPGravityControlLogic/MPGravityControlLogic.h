@@ -14,6 +14,5 @@ FOUNDATION_EXPORT double MPGravityControlLogicVersionNumber;
 //! Project version string for MPGravityControlLogic.
 FOUNDATION_EXPORT const unsigned char MPGravityControlLogicVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <MPGravityControlLogic/PublicHeader.h>
-
+#import <MPGracityControlLogic/MPMotionManager.h>
 

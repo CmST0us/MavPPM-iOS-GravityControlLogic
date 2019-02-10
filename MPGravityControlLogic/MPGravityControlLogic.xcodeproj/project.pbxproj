@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		4FD32AE8221009EB00C391E8 /* MPGravityControlLogic.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD32AE6221009EB00C391E8 /* MPGravityControlLogic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FD32B0322100B8800C391E8 /* MPMotionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD32B0122100B8800C391E8 /* MPMotionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FD32B0422100B8800C391E8 /* MPMotionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD32B0222100B8800C391E8 /* MPMotionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4FD32AE3221009EB00C391E8 /* MPGravityControlLogic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MPGravityControlLogic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FD32AE6221009EB00C391E8 /* MPGravityControlLogic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPGravityControlLogic.h; sourceTree = "<group>"; };
 		4FD32AE7221009EB00C391E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FD32B0122100B8800C391E8 /* MPMotionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPMotionManager.h; sourceTree = "<group>"; };
+		4FD32B0222100B8800C391E8 /* MPMotionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPMotionManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 			children = (
 				4FD32AE6221009EB00C391E8 /* MPGravityControlLogic.h */,
 				4FD32AE7221009EB00C391E8 /* Info.plist */,
+				4FD32B0122100B8800C391E8 /* MPMotionManager.h */,
+				4FD32B0222100B8800C391E8 /* MPMotionManager.m */,
 			);
 			path = MPGravityControlLogic;
 			sourceTree = "<group>";
@@ -60,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FD32AE8221009EB00C391E8 /* MPGravityControlLogic.h in Headers */,
+				4FD32B0322100B8800C391E8 /* MPMotionManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FD32B0422100B8800C391E8 /* MPMotionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +282,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.eric3u.MPGravityControlLogic;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -299,6 +308,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.eric3u.MPGravityControlLogic;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

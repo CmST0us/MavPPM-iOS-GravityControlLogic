@@ -164,17 +164,17 @@
                     }
                 }
                 if ([type unsignedIntegerValue] & MPGravityControlTypeAccelerometer) {
-                    if (self.motionManager.deviceMotionActive) {
+                    if (self.motionManager.accelerometerActive) {
                         [control updateData:self.motionManager.accelerometerData];
                     }
                 }
                 if ([type unsignedIntegerValue] & MPGravityControlTypeGyro) {
-                    if (self.motionManager.deviceMotionActive) {
+                    if (self.motionManager.gyroActive) {
                         [control updateData:self.motionManager.gyroData];
                     }
                 }
                 if ([type unsignedIntegerValue] & MPGravityControlTypeMagnetometer) {
-                    if (self.motionManager.deviceMotionActive) {
+                    if (self.motionManager.magnetometerActive) {
                         [control updateData:self.motionManager.magnetometerData];
                     }
                 }

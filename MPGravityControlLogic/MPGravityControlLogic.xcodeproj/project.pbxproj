@@ -21,6 +21,9 @@
 		4FD32B1A22102BF200C391E8 /* MPGravityGyroControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD32B1822102BF200C391E8 /* MPGravityGyroControl.m */; };
 		4FD32B1D22102C0600C391E8 /* MPGravityMagnetometerControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD32B1B22102C0600C391E8 /* MPGravityMagnetometerControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FD32B1E22102C0600C391E8 /* MPGravityMagnetometerControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD32B1C22102C0600C391E8 /* MPGravityMagnetometerControl.m */; };
+		4FE6804722106A3A0048C7D9 /* MPControlValueProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FE6804622106A3A0048C7D9 /* MPControlValueProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FE6804A22106A730048C7D9 /* MPControlValueLinear.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FE6804822106A730048C7D9 /* MPControlValueLinear.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FE6804B22106A730048C7D9 /* MPControlValueLinear.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE6804922106A730048C7D9 /* MPControlValueLinear.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		4FD32B1822102BF200C391E8 /* MPGravityGyroControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPGravityGyroControl.m; sourceTree = "<group>"; };
 		4FD32B1B22102C0600C391E8 /* MPGravityMagnetometerControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPGravityMagnetometerControl.h; sourceTree = "<group>"; };
 		4FD32B1C22102C0600C391E8 /* MPGravityMagnetometerControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPGravityMagnetometerControl.m; sourceTree = "<group>"; };
+		4FE6804622106A3A0048C7D9 /* MPControlValueProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPControlValueProtocol.h; sourceTree = "<group>"; };
+		4FE6804822106A730048C7D9 /* MPControlValueLinear.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPControlValueLinear.h; sourceTree = "<group>"; };
+		4FE6804922106A730048C7D9 /* MPControlValueLinear.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPControlValueLinear.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,7 @@
 		4FD32AE5221009EB00C391E8 /* MPGravityControlLogic */ = {
 			isa = PBXGroup;
 			children = (
+				4FE68045221069CE0048C7D9 /* ControlValue */,
 				4FD32B1F2210333E00C391E8 /* MotionManager */,
 				4FD32AE6221009EB00C391E8 /* MPGravityControlLogic.h */,
 				4FD32AE7221009EB00C391E8 /* Info.plist */,
@@ -108,6 +115,16 @@
 			path = MotionManager;
 			sourceTree = "<group>";
 		};
+		4FE68045221069CE0048C7D9 /* ControlValue */ = {
+			isa = PBXGroup;
+			children = (
+				4FE6804622106A3A0048C7D9 /* MPControlValueProtocol.h */,
+				4FE6804822106A730048C7D9 /* MPControlValueLinear.h */,
+				4FE6804922106A730048C7D9 /* MPControlValueLinear.m */,
+			);
+			path = ControlValue;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -118,6 +135,8 @@
 				4FD32B112210144E00C391E8 /* MPGravityDeviceMotionControl.h in Headers */,
 				4FD32B1922102BF200C391E8 /* MPGravityGyroControl.h in Headers */,
 				4FD32B1522102BE200C391E8 /* MPGravityAccelerometerControl.h in Headers */,
+				4FE6804722106A3A0048C7D9 /* MPControlValueProtocol.h in Headers */,
+				4FE6804A22106A730048C7D9 /* MPControlValueLinear.h in Headers */,
 				4FD32B0D2210142600C391E8 /* MPGravityControl.h in Headers */,
 				4FD32AE8221009EB00C391E8 /* MPGravityControlLogic.h in Headers */,
 				4FD32B0322100B8800C391E8 /* MPMotionManager.h in Headers */,
@@ -197,6 +216,7 @@
 				4FD32B1A22102BF200C391E8 /* MPGravityGyroControl.m in Sources */,
 				4FD32B1E22102C0600C391E8 /* MPGravityMagnetometerControl.m in Sources */,
 				4FD32B0422100B8800C391E8 /* MPMotionManager.m in Sources */,
+				4FE6804B22106A730048C7D9 /* MPControlValueLinear.m in Sources */,
 				4FD32B0E2210142600C391E8 /* MPGravityControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

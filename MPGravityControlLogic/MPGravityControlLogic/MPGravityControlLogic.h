@@ -13,3 +13,7 @@
 #import <MPGravityControlLogic/MPGravityMagnetometerControl.h>
 #import <MPGravityControlLogic/MPGravityAccelerometerControl.h>
 #import <MPGravityControlLogic/MPGravityDeviceMotionControl.h>
+
+// Control Value
+#import <MPGravityControlLogic/MPControlValueProtocol.h>
+#import <MPGravityControlLogic/MPControlValueLinear.h>

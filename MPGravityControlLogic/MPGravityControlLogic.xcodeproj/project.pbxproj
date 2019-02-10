@@ -10,6 +10,17 @@
 		4FD32AE8221009EB00C391E8 /* MPGravityControlLogic.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD32AE6221009EB00C391E8 /* MPGravityControlLogic.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FD32B0322100B8800C391E8 /* MPMotionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD32B0122100B8800C391E8 /* MPMotionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FD32B0422100B8800C391E8 /* MPMotionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD32B0222100B8800C391E8 /* MPMotionManager.m */; };
+		4FD32B0722100C9E00C391E8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD32B0622100C9E00C391E8 /* CoreMotion.framework */; };
+		4FD32B0D2210142600C391E8 /* MPGravityControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD32B0B2210142600C391E8 /* MPGravityControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FD32B0E2210142600C391E8 /* MPGravityControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD32B0C2210142600C391E8 /* MPGravityControl.m */; };
+		4FD32B112210144E00C391E8 /* MPGravityDeviceMotionControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD32B0F2210144E00C391E8 /* MPGravityDeviceMotionControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FD32B122210144E00C391E8 /* MPGravityDeviceMotionControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD32B102210144E00C391E8 /* MPGravityDeviceMotionControl.m */; };
+		4FD32B1522102BE200C391E8 /* MPGravityAccelerometerControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD32B1322102BE200C391E8 /* MPGravityAccelerometerControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FD32B1622102BE200C391E8 /* MPGravityAccelerometerControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD32B1422102BE200C391E8 /* MPGravityAccelerometerControl.m */; };
+		4FD32B1922102BF200C391E8 /* MPGravityGyroControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD32B1722102BF200C391E8 /* MPGravityGyroControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FD32B1A22102BF200C391E8 /* MPGravityGyroControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD32B1822102BF200C391E8 /* MPGravityGyroControl.m */; };
+		4FD32B1D22102C0600C391E8 /* MPGravityMagnetometerControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD32B1B22102C0600C391E8 /* MPGravityMagnetometerControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FD32B1E22102C0600C391E8 /* MPGravityMagnetometerControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD32B1C22102C0600C391E8 /* MPGravityMagnetometerControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +29,17 @@
 		4FD32AE7221009EB00C391E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FD32B0122100B8800C391E8 /* MPMotionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPMotionManager.h; sourceTree = "<group>"; };
 		4FD32B0222100B8800C391E8 /* MPMotionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPMotionManager.m; sourceTree = "<group>"; };
+		4FD32B0622100C9E00C391E8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		4FD32B0B2210142600C391E8 /* MPGravityControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPGravityControl.h; sourceTree = "<group>"; };
+		4FD32B0C2210142600C391E8 /* MPGravityControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPGravityControl.m; sourceTree = "<group>"; };
+		4FD32B0F2210144E00C391E8 /* MPGravityDeviceMotionControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPGravityDeviceMotionControl.h; sourceTree = "<group>"; };
+		4FD32B102210144E00C391E8 /* MPGravityDeviceMotionControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPGravityDeviceMotionControl.m; sourceTree = "<group>"; };
+		4FD32B1322102BE200C391E8 /* MPGravityAccelerometerControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPGravityAccelerometerControl.h; sourceTree = "<group>"; };
+		4FD32B1422102BE200C391E8 /* MPGravityAccelerometerControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPGravityAccelerometerControl.m; sourceTree = "<group>"; };
+		4FD32B1722102BF200C391E8 /* MPGravityGyroControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPGravityGyroControl.h; sourceTree = "<group>"; };
+		4FD32B1822102BF200C391E8 /* MPGravityGyroControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPGravityGyroControl.m; sourceTree = "<group>"; };
+		4FD32B1B22102C0600C391E8 /* MPGravityMagnetometerControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPGravityMagnetometerControl.h; sourceTree = "<group>"; };
+		4FD32B1C22102C0600C391E8 /* MPGravityMagnetometerControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPGravityMagnetometerControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FD32B0722100C9E00C391E8 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +59,7 @@
 			children = (
 				4FD32AE5221009EB00C391E8 /* MPGravityControlLogic */,
 				4FD32AE4221009EB00C391E8 /* Products */,
+				4FD32B0522100C9E00C391E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,12 +74,38 @@
 		4FD32AE5221009EB00C391E8 /* MPGravityControlLogic */ = {
 			isa = PBXGroup;
 			children = (
+				4FD32B1F2210333E00C391E8 /* MotionManager */,
 				4FD32AE6221009EB00C391E8 /* MPGravityControlLogic.h */,
 				4FD32AE7221009EB00C391E8 /* Info.plist */,
-				4FD32B0122100B8800C391E8 /* MPMotionManager.h */,
-				4FD32B0222100B8800C391E8 /* MPMotionManager.m */,
 			);
 			path = MPGravityControlLogic;
+			sourceTree = "<group>";
+		};
+		4FD32B0522100C9E00C391E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FD32B0622100C9E00C391E8 /* CoreMotion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FD32B1F2210333E00C391E8 /* MotionManager */ = {
+			isa = PBXGroup;
+			children = (
+				4FD32B0122100B8800C391E8 /* MPMotionManager.h */,
+				4FD32B0222100B8800C391E8 /* MPMotionManager.m */,
+				4FD32B0B2210142600C391E8 /* MPGravityControl.h */,
+				4FD32B0C2210142600C391E8 /* MPGravityControl.m */,
+				4FD32B0F2210144E00C391E8 /* MPGravityDeviceMotionControl.h */,
+				4FD32B102210144E00C391E8 /* MPGravityDeviceMotionControl.m */,
+				4FD32B1322102BE200C391E8 /* MPGravityAccelerometerControl.h */,
+				4FD32B1422102BE200C391E8 /* MPGravityAccelerometerControl.m */,
+				4FD32B1722102BF200C391E8 /* MPGravityGyroControl.h */,
+				4FD32B1822102BF200C391E8 /* MPGravityGyroControl.m */,
+				4FD32B1B22102C0600C391E8 /* MPGravityMagnetometerControl.h */,
+				4FD32B1C22102C0600C391E8 /* MPGravityMagnetometerControl.m */,
+			);
+			path = MotionManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,8 +115,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FD32B112210144E00C391E8 /* MPGravityDeviceMotionControl.h in Headers */,
+				4FD32B1922102BF200C391E8 /* MPGravityGyroControl.h in Headers */,
+				4FD32B1522102BE200C391E8 /* MPGravityAccelerometerControl.h in Headers */,
+				4FD32B0D2210142600C391E8 /* MPGravityControl.h in Headers */,
 				4FD32AE8221009EB00C391E8 /* MPGravityControlLogic.h in Headers */,
 				4FD32B0322100B8800C391E8 /* MPMotionManager.h in Headers */,
+				4FD32B1D22102C0600C391E8 /* MPGravityMagnetometerControl.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +192,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FD32B122210144E00C391E8 /* MPGravityDeviceMotionControl.m in Sources */,
+				4FD32B1622102BE200C391E8 /* MPGravityAccelerometerControl.m in Sources */,
+				4FD32B1A22102BF200C391E8 /* MPGravityGyroControl.m in Sources */,
+				4FD32B1E22102C0600C391E8 /* MPGravityMagnetometerControl.m in Sources */,
 				4FD32B0422100B8800C391E8 /* MPMotionManager.m in Sources */,
+				4FD32B0E2210142600C391E8 /* MPGravityControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

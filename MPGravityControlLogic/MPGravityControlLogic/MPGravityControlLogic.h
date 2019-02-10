@@ -6,13 +6,10 @@
 //  Copyright © 2019 eric3u. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <MPGravityControlLogic/MPMotionManager.h>
+#import <MPGravityControlLogic/MPGravityControl.h>
 
-//! Project version number for MPGravityControlLogic.
-FOUNDATION_EXPORT double MPGravityControlLogicVersionNumber;
-
-//! Project version string for MPGravityControlLogic.
-FOUNDATION_EXPORT const unsigned char MPGravityControlLogicVersionString[];
-
-#import <MPGracityControlLogic/MPMotionManager.h>
-
+#import <MPGravityControlLogic/MPGravityGyroControl.h>
+#import <MPGravityControlLogic/MPGravityMagnetometerControl.h>
+#import <MPGravityControlLogic/MPGravityAccelerometerControl.h>
+#import <MPGravityControlLogic/MPGravityDeviceMotionControl.h>

@@ -10,6 +10,10 @@
 #import <CoreMotion/CoreMotion.h>
 
 NS_ASSUME_NONNULL_BEGIN
+
+#define DEGToRAD(x) ((x) * M_PI / 180)
+#define RADToDEG(x) ((x) * 180 / M_PI)
+
 typedef NS_OPTIONS(NSUInteger, MPGravityControlType) {
     MPGravityControlTypeDeviceMotion = 1 << 0,
     MPGravityControlTypeAccelerometer = 1 << 1,

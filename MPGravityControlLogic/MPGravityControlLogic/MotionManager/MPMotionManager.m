@@ -142,8 +142,8 @@
     });
 }
 
-- (void)addControl:(MPGravityControl *)control {
-    MPGravityControlType type = control.type;
+- (void)addControl:(MPGravityControl *)control
+          withType:(MPGravityControlType)type {
     NSNumber *typeNumber = [NSNumber numberWithUnsignedInteger:type];
     NSMutableArray *controls = self.mutableControls[typeNumber];
     if (controls == nil) {
@@ -151,6 +151,24 @@
         [self.mutableControls setObject:controls forKey:typeNumber];
     }
     [controls addObject:control];
+}
+
+- (void)addControl:(MPGravityControl *)control {
+    MPGravityControlType type = control.type;
+    
+    if (type & MPGravityControlTypeDeviceMotion) {
+        [self addControl:control withType:MPGravityControlTypeDeviceMotion];
+    }
+    if (type & MPGravityControlTypeAccelerometer) {
+        [self addControl:control withType:MPGravityControlTypeAccelerometer];
+    }
+    if (type & MPGravityControlTypeGyro) {
+        [self addControl:control withType:MPGravityControlTypeGyro];
+    }
+    if (type & MPGravityControlTypeMagnetometer) {
+        [self addControl:control withType:MPGravityControlTypeMagnetometer];
+    }
+
 }
 
 - (void)updateData {

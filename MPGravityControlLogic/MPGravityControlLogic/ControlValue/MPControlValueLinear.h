@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
+
 #import "MPControlValueProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -19,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
     
     double _b;
     double _k;
+    
+    BOOL _inRange;
 }
 
 - (instancetype)initWithOutputMax:(double)outMax
@@ -26,8 +30,10 @@ NS_ASSUME_NONNULL_BEGIN
                          inputMax:(double)inputMax
                          inputMin:(double)inputMin;
 
-- (double)calc:(double)x;
+- (instancetype)initWithPoint:(CGPoint)p1
+                       Point2:(CGPoint)p2;
 
+- (double)calc:(double)x;
 @end
 
 NS_ASSUME_NONNULL_END

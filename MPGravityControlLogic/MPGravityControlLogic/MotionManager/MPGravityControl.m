@@ -21,12 +21,12 @@
 
 - (void)updateData:(CMLogItem *)logItem {
     _logItem = logItem;
+    if ([self respondsToSelector:@selector(onUpdataData)]) {
+        [self onUpdataData];
+    }
     if (self.delegate &&
         [self.delegate respondsToSelector:@selector(gravityControlDidUpdateData:)]) {
         [self.delegate gravityControlDidUpdateData:self];
-    }
-    if ([self respondsToSelector:@selector(onUpdataData)]) {
-        [self onUpdataData];
     }
 }
 
